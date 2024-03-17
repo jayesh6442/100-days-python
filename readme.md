@@ -1,1 +1,1 @@
-# revive the 100 days of the code wiht python 
+# revive the 100 days of the code with python 
