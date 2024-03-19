@@ -6,12 +6,9 @@ def deal_card():
 user_cards = []
 computer_cards = []
 is_game_over=False
-
 for _ in range(2):
     user_cards.append(deal_card())
     computer_cards.append(deal_card())
-
-
 def calculate_score(cards):
     if sum(cards) > 21 and len(cards)==2:
         return 0
@@ -34,8 +31,6 @@ def compare(sum_computer,sum_user):
         return "you win"
     else:
         return "you lose" 
-    
-
 while not is_game_over:
     sum_of_computer = calculate_score(computer_cards)
     sum_of_user = calculate_score(user_cards)
@@ -48,12 +43,10 @@ while not is_game_over:
             user_cards.append(deal_card())
         else:
             is_game_over=True
-
 while sum_of_computer !=0 and sum_of_computer <17:
     computer_cards.append(deal_card())
     sum_of_computer = calculate_score(computer_cards)
 print(f"user card {user_cards} sum {sum_of_user} and computer {computer_cards} sum {sum_of_computer}")
-print(compare(sum_of_computer,sum_of_user)
-)    
+print(compare(sum_of_computer,sum_of_user))    
 
 
