@@ -23,7 +23,7 @@ list_pass = list(password)
 
 
 random.shuffle(list_pass)
-print(list_pass)
+# print(list_pass)
 final_pass = ''
 for i in list_pass:
     final_pass+=i

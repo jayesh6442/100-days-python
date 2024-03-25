@@ -29,7 +29,7 @@ scissors = '''
 ---.__(___)
 '''
 game_image = [rock, paper, scissors]
-human_choise = random.randint(0, 2)
+human_choise = int(input("Enter the choise 0 rock 1 paper 3: "))
 computer_choise = random.randint(0, 2)
 
 print("human chose")
